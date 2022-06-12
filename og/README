@@ -1,0 +1,4 @@
+To run the code use 
+
+mpirun -n 10 ./racipeOG  og &
+

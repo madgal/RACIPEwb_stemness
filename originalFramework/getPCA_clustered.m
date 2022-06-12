@@ -1,0 +1,15 @@
+file = sprintf('testPCA.dat',i);
+m = csvread(file);
+levels = m(:,4:12);
+%levels = m(:,4:12).*m(:,3);
+%mu = mean(levels);
+%sig= std(levels);
+%levels =(levels-mu)./sig;
+[coeff,score,latent,tsquared,explained,mu] = pca(levels,'NumComponents',2);
+FF = [m(:,1) m(:,2) score];
+FF = FF.';
+fileout = sprintf('testPCAresults.dat');
+fid = fopen(fileout,'w');
+fprintf(fid,'%6.4f,%6.4f,,\n',explained(1:2));
+fprintf(fid,'%2d,%2d,%6.4f,%6.4f\n',FF);
+fclose(fid);
