@@ -4,7 +4,7 @@ The code for RACIPEwb framework to generate simulated gene expressions a nine co
 If you use this code please cite: Huang, B. et al. Decoding the mechanisms underlying cell-fate decision-making during stem cell differentiation by random circuit perturbation. J Roy Soc Interface 17, 20200500 (2020).
 
 
-This code been extended from the original RACIPE framework to include the binding and unbinding of OCT4, SOX2, and the OCT4-SOX2 complex. This code is specifically for the nine-component stemness network.
+This code been extended from the original RACIPE framework to include the binding and unbinding of OCT4, SOX2, and the OCT4-SOX2 complex. This code is specifically for the nine-component stemness network which includes - Nanog, Gcnf, Gata6, Pbx1, Klf4, Cdx2, OCT4, SOX2, and OCT4-SOX2.
 
 The original RACIPE code (generalized for any network) can be found https://github.com/simonhb1990/RACIPE-1.0
 
