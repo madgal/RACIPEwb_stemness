@@ -1,3 +1,6 @@
+## Get data into a form that Java Treeview can use
+## Madeline Galbraith
+
 ## The parallel part start
 from mpi4py import MPI
 my_rank = MPI.COMM_WORLD.Get_rank()
