@@ -1,3 +1,5 @@
+## Parse and collate data files for analysis
+## Written by Madeline Galbraith
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
