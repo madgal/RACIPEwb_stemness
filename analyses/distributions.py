@@ -1,13 +1,6 @@
-## from https://plot.ly/ipython-notebooks/principal-component-analysis/
-## and https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
-from matplotlib.colors import BoundaryNorm
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-from matplotlib.backends.backend_pdf import PdfPages
 import sys
 
 import matplotlib.font_manager as font_manager
@@ -80,11 +73,11 @@ for k in range(1,len(datas[0].columns)):
 
 	plt.subplot2grid(grid_size,(rowC,colC))
 	for rd in range(len(datas)):
-		print rd,colors[rd]
-		print datas[rd][k]
+		#print rd,colors[rd]
+		#print datas[rd][k]
 		plt.hist(datas[rd][k],label=dirs[rd],bins=50,alpha=0.5,density=True,color=colors[rd])
 		mxx = 0.2
-		print rd,names[k-1]
+		#print rd,names[k-1]
 		plt.vlines(threshs[rd][names[k-1]],0,mxx,linestyles='dashed',color=colors[rd])
 		#plt.vlines(np.median(rdata[k]),0,mxx,linestyles='solid')
 	plt.xlabel('Gene expression (log2)')#,fontsize=20)
@@ -156,7 +149,7 @@ above,below=[],[]
 for rd in range(len(datas)):
         t1,t2=[],[] 
 	for k in range(1,len(datas[rd].columns)):
-		print rd,names[k-1],np.mean(datas[rd][k])
+		#print rd,names[k-1],np.mean(datas[rd][k])
 		temp= np.mean(datas[rd][k] > threshs[rd][names[k-1]])
 		t1+=[temp]
 		temp= np.mean(datas[rd][k] < threshs[rd][names[k-1]])
@@ -165,10 +158,10 @@ for rd in range(len(datas)):
 	below  += [t2]
 
 
-print above
-print below
+#print above
+#print below
 titles=["RACIPE","RACIPE-wb (par1)","RACIPE-wb (par2)","RACIPE-wb (par3)"]
-print len(datas)
+#print len(datas)
 for rd in range(len(datas)):
 	fig = plt.figure()
 	plt.bar(names,np.array(above[rd])*0.+1.,color='orange',label="x/x0>1")
@@ -179,9 +172,8 @@ for rd in range(len(datas)):
 	plt.xticks(rotation=60)
 	ax = plt.gca()
 	ax.tick_params(axis='both',labelsize=15)
-	#title = "S"+str(i)+" B=["+str(inpD[0])+"-"+str(inpD[1])+"] U=["+str(inpD[2])+"-"+str(inpD[3])+"]"
 	titl = titles[rd]
-	print titl
+	#print titl
 	plt.title(titl)
 	plt.ylabel('Probability',fontsize=15)
 	plt.xlabel('Gene',fontsize=15)

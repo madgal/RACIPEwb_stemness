@@ -1,12 +1,6 @@
-## from https://plot.ly/ipython-notebooks/principal-component-analysis/
-## and https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
-from matplotlib.colors import BoundaryNorm
-from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 import matplotlib.font_manager as font_manager
 fontpath = '/usr/share/fonts/truetype/freefont/FreeSerif.ttf'

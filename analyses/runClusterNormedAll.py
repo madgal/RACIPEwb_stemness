@@ -1,6 +1,3 @@
-## from https://plot.ly/ipython-notebooks/principal-component-analysis/
-## and https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60
-
 ## The parallel part start
 from mpi4py import MPI
 my_rank = MPI.COMM_WORLD.Get_rank()

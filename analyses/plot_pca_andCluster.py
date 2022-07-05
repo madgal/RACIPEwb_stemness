@@ -1,12 +1,6 @@
-#PCAresults_s1.dat
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
-from matplotlib.colors import BoundaryNorm
-from matplotlib.backends.backend_pdf import PdfPages
-from mpl_toolkits.mplot3d import Axes3D
 
 import matplotlib.font_manager as font_manager
 
