@@ -1,3 +1,8 @@
+/* 
+    Code edited from the original threshold calculation to include
+    binding of SOX2 and OCT4 by Madeline Galbraith
+    last modified March 2020
+*/
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
