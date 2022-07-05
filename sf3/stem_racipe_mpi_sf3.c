@@ -1,3 +1,7 @@
+/* 
+   Code last edited by Madeline Galbraith, March 2020
+   to include binding and data parallelization 
+*/
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
