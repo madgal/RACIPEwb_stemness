@@ -1,7 +1,11 @@
+### Cluster the results based on the hierarchical clustering of the microarray gene expression data from Java treeview
+## Written by Madeline Galbraith 
+
 import pandas as pd
 import numpy as np
 import os
 import sys
+
 
 
 def add(res,n,l,r):
