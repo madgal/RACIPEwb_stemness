@@ -1,3 +1,5 @@
+## Check half functional rule for binding parameters
+## Written by Madeline Galbraith
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
