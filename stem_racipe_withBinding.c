@@ -1,3 +1,6 @@
+/*
+Code last modified March 2020 by Madeline Galbraith
+*/
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
