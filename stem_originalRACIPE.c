@@ -1,3 +1,7 @@
+/*
+   Code modified from original to include data paralellization
+   Last edited by Madeline Galbraith March 2020
+*/
 # include <stdlib.h>
 # include <stdio.h>
 # include <math.h>
