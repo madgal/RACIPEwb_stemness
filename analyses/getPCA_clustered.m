@@ -1,3 +1,6 @@
+%% Code written by Madeline Galbraith
+%% PCA of the normalized data
+
 file = sprintf('clustPCA_SC_og.dat',i);
 m = csvread(file);
 levels = m(:,3:11);
