@@ -1,3 +1,5 @@
+## Find and label clusters from hierarchical clustering
+## Written by Madeline Galbraith
 import pandas as pd
 import numpy as np
 import os
