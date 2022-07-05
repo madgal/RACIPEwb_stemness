@@ -1,3 +1,6 @@
+## Modify the GTR files for later manipulation
+## written by Madeline Galbraith
+
 import pandas as pd
 import numpy as np
 import os
