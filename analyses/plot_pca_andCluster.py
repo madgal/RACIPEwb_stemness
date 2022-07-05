@@ -1,3 +1,5 @@
+## Plot the PCA and color by probability density or HCA cluster
+## Written by Madeline Galbraith
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,6 +19,7 @@ import sys,os
 
 
 def plot(data,xmin1,xmax1,ymin1,ymax1,cmax1,sett=False,scale=1.):
+	### Plot the pca, colored by probability density
         [HH,xh,yh] = np.histogram2d(data[:,2],data[:,3],bins=(100,100),density=False)
         HH=HH.T/scale
 
@@ -40,6 +43,7 @@ def plot(data,xmin1,xmax1,ymin1,ymax1,cmax1,sett=False,scale=1.):
         return[xmin1,xmax1,ymin1,ymax1,cmax1]
 
 def plot2(data,xmin1,xmax1,ymin1,ymax1,name):
+	## Plot the PCA, colored by cluster in the microarray gene expression data (HCA analysis)
         #colors=['k','b','g','r','c','m','y','plum','navy','line']
 	colors=["#000000", "#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059", "#7A4900", "#0000A6", "#63FFAC", "#B79762", "#A4E804", "#004D43", "#8FB0FF", "#3B5DFF", "#B903AA", "#BA0900", "#FFB500", "#6B7900", "#FF90C9", "#BC23FF", "#99ADC0"]
 
