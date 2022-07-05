@@ -1,4 +1,5 @@
 /*
+Code written by co-authors and modified from RACIPE to include binding
 Code last modified March 2020 by Madeline Galbraith
 */
 # include <stdlib.h>
