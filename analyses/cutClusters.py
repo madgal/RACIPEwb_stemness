@@ -1,3 +1,6 @@
+## Parse the data from the hierarchical clustering to be easier for data manipulation in future plots
+## Written by Madeline Galbraith
+
 import pandas as pd
 import numpy as np
 import os
