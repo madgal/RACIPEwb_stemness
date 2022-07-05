@@ -1,3 +1,5 @@
+## Calculate the entropy of the knockouts
+## Written by Madeline Galbraith
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
